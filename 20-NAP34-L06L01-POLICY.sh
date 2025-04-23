@@ -1,7 +1,3 @@
-# enable debugging
-set -x
-PS4='+$(date +"%T.%3N"): '
-
 # update lab environment
 sudo ssh nginx test -e /etc/nginx/conf.d/default.conf && sudo ssh nginx rm /etc/nginx/conf.d/default.conf
 sudo ssh nginx mkdir --parents /etc/app_protect/conf/nap.d
