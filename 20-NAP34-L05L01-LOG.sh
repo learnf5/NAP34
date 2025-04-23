@@ -1,6 +1,6 @@
 # update lab environment
 sudo ssh nginx test -e /etc/nginx/conf.d/default.conf && sudo ssh nginx rm /etc/nginx/conf.d/default.conf
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/LOGGING/nginx.conf
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/LOG/nginx.conf
 sudo scp /tmp/nginx.conf nginx:/etc/nginx/
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/INTRO/nap.conf
 sudo scp /tmp/nap.conf   nginx:/etc/nginx/conf.d/ 
