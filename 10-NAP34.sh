@@ -1,5 +1,5 @@
 # get lab-info.md for student guide bravais id
-curl --silent https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/lab-info.md --output /tmp/lab-info.md
+###curl --silent https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/lab-info.md --output /tmp/lab-info.md
 ###brav_id=$(awk -F '|' "/$LAB_ID/"' {print $2}' /tmp/lab-info.md)
 
 # install nginx license
