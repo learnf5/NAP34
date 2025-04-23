@@ -21,7 +21,7 @@ sudo scp /tmp/my-default-policy.json                        nginx:/tmp/my-defaul
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TUNING/policy_{transparent,viol_{http,evasion}}.json
 sudo scp /tmp/policy_{transparent,viol_{http,evasion}}.json nginx:/etc/app_protect/conf/nap.d
 
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/SIGNATURES/{policy_viol_filetype.json,my-filetypes.txt,local-policy.json}
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/ATTACK/{policy_viol_filetype.json,my-filetypes.txt,local-policy.json}
 sudo scp /tmp/policy_viol_filetype.json                     nginx:/etc/app_protect/conf/nap.d
 sudo scp /tmp/my-filetypes.txt                              nginx:/etc/app_protect/conf/
 sudo scp /tmp/local-policy.json                             nginx:/etc/app_protect/conf/nap.d/
@@ -36,10 +36,8 @@ sudo scp /tmp/policy_data_guard.json              nginx://etc/app_protect/conf/n
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/INTRO/hosts
 sudo scp /tmp/hosts nginx:/etc/hosts
 
-
-
 # update lab environment THIS was an alternate way of downloading files using git clone - but it downloads 17 mb of stuff...
 # better to do individual file downloads with curl and then scp
 # cd /tmp
 # NOT sure we need the git clone - just download & copy via github directly
-#git clone https://github.com/learnf5/nap31.git nap_files
+###git clone https://github.com/learnf5/nap31.git nap_files
