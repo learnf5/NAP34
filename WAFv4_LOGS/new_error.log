@@ -1,0 +1,699 @@
+2025/06/18 09:11:41 [notice] 12402#12402: APP_PROTECT { "event": "configuration_test", "configSetFile": "/opt/app_protect/config/temp_config_set.json", "configSetId": "", "mode:" "signaller" }
+2025/06/18 09:11:41 [notice] 12402#12402: signal process started
+2025/06/18 09:11:42 [notice] 8403#8403: signal 1 (SIGHUP) received from 12402, reconfiguring
+2025/06/18 09:11:42 [notice] 8403#8403: reconfiguring
+2025/06/18 09:11:42 [notice] 8403#8403: APP_PROTECT { "event": "configuration_load_start", "configSetFile": "/opt/app_protect/config/temp_config_set.json", "configSetId": "" }
+2025/06/18 09:11:42 [notice] 8403#8403: APP_PROTECT policy 'app_protect_default_policy' from: /etc/app_protect/conf/NginxDefaultPolicy.json compiled successfully
+2025/06/18 09:11:42 [notice] 8403#8403: APP_PROTECT policy 'app_protect_default_policy' from: app_protect_default_policy compiled successfully
+2025/06/18 09:11:42 [notice] 8403#8403: APP_PROTECT policy 'app_protect_strict_policy' from: /etc/app_protect/conf/NginxStrictPolicy.json compiled successfully
+2025/06/18 09:11:42 [notice] 8403#8403: APP_PROTECT policy 'app_protect_strict_policy' from: app_protect_strict_policy compiled successfully
+2025/06/18 09:11:42 [notice] 8403#8403: APP_PROTECT {"completed_successfully":true,"event":"configuration_load_success","attack_signatures_package":{"version":"2025.06.11","revision_datetime":"2025-06-11T16:36:27Z"},"bot_signatures_package":{"version":"2025.06.10","revision_datetime":"2025-06-10T11:19:04Z"},"threat_campaigns_package":{"version":"2025.06.16","revision_datetime":"2025-06-16T10:18:19Z"},"softwareVersion":"4.14.0","componentVersions":{"wafEngineVersion":"11.336.0","wafNginxVersion":"5.342.0"}}
+
+2025/06/18 09:11:42 [notice] 8403#8403: using the "epoll" event method
+2025/06/18 09:11:42 [notice] 8403#8403: start worker processes
+2025/06/18 09:11:42 [notice] 8403#8403: start worker process 12427
+2025/06/18 09:11:42 [notice] 8403#8403: start worker process 12428
+2025/06/18 09:11:42 [notice] 8403#8403: start worker process 12429
+2025/06/18 09:11:42 [notice] 8403#8403: start worker process 12430
+2025/06/18 09:11:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:11:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:11:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:11:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:11:42 [notice] 10248#10248: gracefully shutting down
+2025/06/18 09:11:42 [notice] 8403#8403: signal 17 (SIGCHLD) received from 12415
+2025/06/18 09:11:42 [notice] 10249#10249: gracefully shutting down
+2025/06/18 09:11:42 [notice] 10250#10250: gracefully shutting down
+2025/06/18 09:11:42 [notice] 10251#10251: gracefully shutting down
+2025/06/18 09:11:42 [notice] 10250#10250: exiting
+2025/06/18 09:11:42 [notice] 10249#10249: exiting
+2025/06/18 09:11:42 [notice] 10248#10248: exiting
+2025/06/18 09:11:42 [notice] 10251#10251: exiting
+2025/06/18 09:11:42 [notice] 10251#10251: exit
+2025/06/18 09:11:42 [notice] 10249#10249: exit
+2025/06/18 09:11:42 [notice] 10250#10250: exit
+2025/06/18 09:11:42 [notice] 10248#10248: exit
+2025/06/18 09:11:42 [notice] 8403#8403: signal 17 (SIGCHLD) received from 10250
+2025/06/18 09:11:42 [notice] 8403#8403: worker process 10250 exited with code 0
+2025/06/18 09:11:42 [notice] 8403#8403: signal 29 (SIGIO) received
+2025/06/18 09:11:42 [notice] 8403#8403: signal 17 (SIGCHLD) received from 10249
+2025/06/18 09:11:42 [notice] 8403#8403: worker process 10249 exited with code 0
+2025/06/18 09:11:42 [notice] 8403#8403: worker process 10248 exited with code 0
+2025/06/18 09:11:42 [notice] 8403#8403: worker process 10251 exited with code 0
+2025/06/18 09:11:42 [notice] 8403#8403: signal 29 (SIGIO) received
+2025/06/18 09:11:42 [notice] 8403#8403: signal 17 (SIGCHLD) received from 10248
+2025/06/18 09:11:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:11:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:11:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:02 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:02 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:02 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:02 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:02 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:02 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:02 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:02 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:07 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:07 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:07 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:07 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:07 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:07 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:07 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:07 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:12 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:12 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:12 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:12 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:12 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:12 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:12 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:12 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:12 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:12 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:12 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:12 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:17 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:17 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:17 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:17 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:17 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:17 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:17 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:17 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:22 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:22 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:22 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:22 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:22 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:22 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:22 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:22 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:27 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:27 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:27 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:27 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:27 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:27 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:27 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:27 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:32 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:32 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:32 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:32 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:32 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:32 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:32 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:32 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:37 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:37 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:37 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:37 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:37 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:37 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:37 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:37 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:12:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:12:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:12:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:02 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:02 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:02 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:02 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:02 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:02 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:02 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:02 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:07 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:07 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:07 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:07 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:07 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:07 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:07 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:07 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:12 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:12 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:12 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:12 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:12 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:12 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:12 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:12 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:12 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:12 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:12 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:12 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:17 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:17 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:17 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:17 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:17 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:17 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:17 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:17 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:22 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:22 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:22 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:22 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:22 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:22 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:22 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:22 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:27 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:27 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:27 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:27 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:27 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:27 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:27 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:27 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:32 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:32 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:32 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:32 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:32 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:32 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:32 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:32 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:37 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:37 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:37 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:37 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:37 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:37 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:37 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:37 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:13:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:13:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:13:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:02 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:02 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:02 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:02 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:02 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:02 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:02 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:02 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:07 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:07 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:07 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:07 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:07 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:07 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:07 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:07 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:12 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:12 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:12 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:12 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:12 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:12 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:12 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:12 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:12 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:12 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:12 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:12 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:17 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:17 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:17 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:17 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:17 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:17 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:17 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:17 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:22 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:22 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:22 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:22 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:22 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:22 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:22 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:22 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:27 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:27 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:27 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:27 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:27 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:27 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:27 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:27 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:32 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:32 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:32 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:32 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:32 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:32 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:32 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:32 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:37 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:37 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:37 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:37 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:37 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:37 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:37 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:37 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:14:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:14:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:14:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:02 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:02 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:02 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:02 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:02 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:02 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:02 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:02 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:07 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:07 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:07 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:07 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:07 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:07 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:07 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:07 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:12 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:12 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:12 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:12 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:12 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:12 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:12 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:12 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:12 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:12 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:12 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:12 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:17 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:17 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:17 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:17 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:17 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:17 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:17 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:17 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:22 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:22 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:22 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:22 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:22 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:22 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:22 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:22 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:27 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:27 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:27 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:27 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:27 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:27 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:27 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:27 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:32 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:32 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:32 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:32 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:32 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:32 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:32 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:32 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:37 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:37 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:37 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:37 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:37 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:37 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:37 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:37 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:15:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:15:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:15:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:02 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:02 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:02 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:02 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:02 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:02 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:02 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:02 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:07 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:07 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:07 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:07 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:07 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:07 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:07 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:07 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:12 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:12 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:12 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:12 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:12 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:12 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:12 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:12 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:12 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:12 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:12 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:12 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:17 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:17 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:17 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:17 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:17 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:17 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:17 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:17 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:22 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:22 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:22 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:22 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:22 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:22 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:22 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:22 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:27 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:27 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:27 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:27 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:27 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:27 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:27 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:27 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:32 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:32 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:32 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:32 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:32 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:32 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:32 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:32 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:37 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:37 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:37 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:37 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:37 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:37 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:37 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:37 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:16:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:16:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:16:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:02 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:02 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:02 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:02 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:02 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:02 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:02 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:02 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:07 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:07 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:07 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:07 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:07 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:07 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:07 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:07 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:12 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:12 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:12 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:12 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:12 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:12 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:12 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:12 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:12 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:12 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:12 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:12 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:17 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:17 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:17 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:17 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:17 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:17 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:17 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:17 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:22 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:22 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:22 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:22 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:22 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:22 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:22 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:22 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:27 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:27 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:27 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:27 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:27 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:27 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:27 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:27 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:32 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:32 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:32 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:32 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:32 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:32 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:32 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:32 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:37 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:37 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:37 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:37 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:37 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:37 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:37 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:37 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:42 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:42 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:42 [error] 12429#12429: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:42 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:42 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:42 [error] 12428#12428: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:42 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:42 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:42 [error] 12427#12427: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:42 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:42 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:42 [error] 12430#12430: APP_PROTECT setting reconnect timer
+2025/06/18 09:17:47 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:47 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:47 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:47 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:47 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:47 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:47 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:47 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:52 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:52 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:52 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:52 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:52 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:52 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:52 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:52 [warn] 12430#12430: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:57 [crit] 12428#12428: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:57 [crit] 12429#12429: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:57 [warn] 12428#12428: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:57 [warn] 12429#12429: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:57 [crit] 12427#12427: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:57 [warn] 12427#12427: APP_PROTECT connection declined setting timer
+2025/06/18 09:17:57 [crit] 12430#12430: connect() to unix:/opt/app_protect/pipe/app_protect_plugin_socket failed (2: No such file or directory)
+2025/06/18 09:17:57 [warn] 12430#12430: APP_PROTECT connection declined setting timer
