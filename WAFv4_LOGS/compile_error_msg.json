@@ -1,0 +1,1 @@
+{"event":"configuration_load_failure","completed_successfully":false,"componentVersions":{"wafNginxVersion":"5.342.0","wafEngineVersion":"11.336.0"},"softwareVersion":"4.14.0","error_message":"No response from BD"}
