@@ -1,0 +1,18 @@
+config_set_compiler|INFO|Jan 04 17:25:56.175|6856|F5::LockFactory::Base::lock,,F5::ThreatCampaignFile Line 235 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:56.175|6856|F5::LockFactory::Base::lock,,F5::ThreatCampaignFile Line 235 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:56.178|6856|F5::ThreatCampaignFile::load_from_binary,,Loading Threat Campaigns: /opt/app_protect/tmp/sigfile.tmp.6856/threat_campaigns.bin
+config_set_compiler|INFO|Jan 04 17:25:57.689|6856|F5::LockFactory::Base::unlock,,F5::ThreatCampaignFile Line 312 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6856'.
+config_set_compiler|INFO|Jan 04 17:25:57.689|6856|F5::LockFactory::Base::unlock,,F5::ThreatCampaignFile Line 312 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jan 04 17:25:57.689|6856|F5::ThreatCampaignFile::load_threat_campaigns,,Finish Loading Threat Campaigns
+config_set_compiler|INFO|Jun 03 12:58:39.343|4585|F5::LockFactory::Base::lock,,F5::ThreatCampaignFile Line 237 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:39.345|4585|F5::LockFactory::Base::lock,,F5::ThreatCampaignFile Line 237 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:39.350|4585|F5::ThreatCampaignFile::load_from_binary,,Loading Threat Campaigns: /opt/app_protect/tmp/sigfile.tmp.4585/threat_campaigns.bin
+config_set_compiler|INFO|Jun 03 12:58:40.670|4585|F5::LockFactory::Base::unlock,,F5::ThreatCampaignFile Line 314 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4585'.
+config_set_compiler|INFO|Jun 03 12:58:40.671|4585|F5::LockFactory::Base::unlock,,F5::ThreatCampaignFile Line 314 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:40.671|4585|F5::ThreatCampaignFile::load_threat_campaigns,,Finish Loading Threat Campaigns
+config_set_compiler|INFO|Jun 17 16:34:24.972|9873|F5::LockFactory::Base::lock,,F5::ThreatCampaignFile Line 241 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:24.974|9873|F5::LockFactory::Base::lock,,F5::ThreatCampaignFile Line 241 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:24.977|9873|F5::ThreatCampaignFile::load_from_binary,,Loading Threat Campaigns: /opt/app_protect/tmp/sigfile.tmp.9873/threat_campaigns.bin
+config_set_compiler|INFO|Jun 17 16:34:26.585|9873|F5::LockFactory::Base::unlock,,F5::ThreatCampaignFile Line 318 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9873'.
+config_set_compiler|INFO|Jun 17 16:34:26.585|9873|F5::LockFactory::Base::unlock,,F5::ThreatCampaignFile Line 318 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:26.585|9873|F5::ThreatCampaignFile::load_threat_campaigns,,Finish Loading Threat Campaigns
