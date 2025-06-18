@@ -1,0 +1,24 @@
+config_set_compiler|INFO|Jan 04 17:25:57.709|6856|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 41 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:57.710|6856|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 41 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:57.710|6856|F5::LockFactory::Base::lock,,F5::NegativeSignatures::SigFile::Update Line 448 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:57.710|6856|F5::LockFactory::Base::lock,,F5::NegativeSignatures::SigFile::Update Line 448 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:57.763|6856|F5::LockFactory::Base::unlock,,F5::NegativeSignatures::SigFile::Update Line 519 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6856'.
+config_set_compiler|INFO|Jan 04 17:25:57.763|6856|F5::LockFactory::Base::unlock,,F5::NegativeSignatures::SigFile::Update Line 519 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jan 04 17:25:57.764|6856|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 50 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '6856'.
+config_set_compiler|INFO|Jan 04 17:25:57.764|6856|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 50 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '0')
+apcompile-full|INFO|Jan 04 17:25:58.729|6862|F5::LockFactory::Base::lock,,apcompile-full Line 67 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jan 04 17:25:58.729|6862|F5::LockFactory::Base::lock,,apcompile-full Line 67 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jan 04 17:26:05.012|6862|F5::LockFactory::Base::unlock,,apcompile-full Line 120 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6862'.
+apcompile-full|INFO|Jan 04 17:26:05.012|6862|F5::LockFactory::Base::unlock,,apcompile-full Line 120 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:08.475|4424|F5::LockFactory::Base::lock,,apcompile-full Line 67 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:08.476|4424|F5::LockFactory::Base::lock,,apcompile-full Line 67 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:13.943|4424|F5::LockFactory::Base::unlock,,apcompile-full Line 120 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4424'.
+apcompile-full|INFO|Jun 03 12:58:13.943|4424|F5::LockFactory::Base::unlock,,apcompile-full Line 120 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:41.582|4597|F5::LockFactory::Base::lock,,apcompile-full Line 85 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:41.582|4597|F5::LockFactory::Base::lock,,apcompile-full Line 85 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:41.733|4597|F5::LockFactory::Base::unlock,,F5::LockFactory::Base Line 131 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4597'.
+apcompile-full|INFO|Jun 03 12:58:41.733|4597|F5::LockFactory::Base::unlock,,F5::LockFactory::Base Line 131 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 17 16:34:27.632|9886|F5::LockFactory::Base::lock,,apcompile-full Line 85 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 17 16:34:27.633|9886|F5::LockFactory::Base::lock,,apcompile-full Line 85 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 17 16:34:27.779|9886|F5::LockFactory::Base::unlock,,F5::LockFactory::Base Line 131 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9886'.
+apcompile-full|INFO|Jun 17 16:34:27.779|9886|F5::LockFactory::Base::unlock,,F5::LockFactory::Base Line 131 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
