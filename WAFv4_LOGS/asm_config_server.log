@@ -1,0 +1,120 @@
+config_set_compiler|INFO|Jan 04 17:25:34.234|6850|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:34.234|6850|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:34.234|6850|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 41 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:34.234|6850|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 41 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:52.095|6850|F5::LockFactory::Base::lock,,F5::NegativeSignatures::SigFile::Update Line 448 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:52.095|6850|F5::LockFactory::Base::lock,,F5::NegativeSignatures::SigFile::Update Line 448 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:54.556|6850|F5::LockFactory::Base::unlock,,F5::NegativeSignatures::SigFile::Update Line 519 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6850'.
+config_set_compiler|INFO|Jan 04 17:25:54.557|6850|F5::LockFactory::Base::unlock,,F5::NegativeSignatures::SigFile::Update Line 519 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jan 04 17:25:54.594|6850|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 50 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '6850'.
+config_set_compiler|INFO|Jan 04 17:25:54.595|6850|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 50 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jan 04 17:25:54.636|6850|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6850'.
+config_set_compiler|INFO|Jan 04 17:25:54.636|6850|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jan 04 17:25:56.144|6856|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:56.144|6856|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:56.145|6856|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 41 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jan 04 17:25:56.145|6856|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 41 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jan 04 17:25:57.817|6856|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 50 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '6856'.
+config_set_compiler|INFO|Jan 04 17:25:57.817|6856|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 50 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jan 04 17:25:57.824|6856|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6856'.
+config_set_compiler|INFO|Jan 04 17:25:57.824|6856|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jan 04 17:25:59.290|6862|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jan 04 17:25:59.290|6862|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+apcompile-full|INFO|Jan 04 17:25:59.293|6862|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6862'.
+apcompile-full|INFO|Jan 04 17:25:59.293|6862|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:19.206|4573|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:19.208|4573|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:19.208|4573|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:19.208|4573|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:34.008|4573|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:34.008|4573|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:36.365|4573|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4573'.
+config_set_compiler|INFO|Jun 03 12:58:36.365|4573|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:36.395|4573|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '4573'.
+config_set_compiler|INFO|Jun 03 12:58:36.396|4573|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:36.454|4573|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4573'.
+config_set_compiler|INFO|Jun 03 12:58:36.454|4573|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:37.602|4579|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:37.602|4579|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:37.632|4579|(eval),,Start Bot Signature update
+config_set_compiler|INFO|Jun 03 12:58:37.632|4579|F5::LockFactory::Base::lock,,F5::BotSignatureFile Line 247 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:37.632|4579|F5::LockFactory::Base::lock,,F5::BotSignatureFile Line 247 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:37.715|4579|F5::BotSignatureFile::load_from_binary,,Loading Bot Signatures: /opt/app_protect/tmp/sigfile.tmp.4579/bot_signatures.bin
+config_set_compiler|INFO|Jun 03 12:58:38.060|4579|F5::LockFactory::Base::unlock,,F5::BotSignatureFile Line 291 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4579'.
+config_set_compiler|INFO|Jun 03 12:58:38.061|4579|F5::LockFactory::Base::unlock,,F5::BotSignatureFile Line 291 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:38.061|4579|F5::BotSignatureFile::load_bot_signatures,,Finish Loading Bot Signatures
+config_set_compiler|INFO|Jun 03 12:58:38.069|4579|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:38.069|4579|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:38.099|4579|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4579'.
+config_set_compiler|INFO|Jun 03 12:58:38.100|4579|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:38.100|4579|(eval),,Bot Signature updated successfully - 2300 bot_signatures loaded, (7 added, 0 updated)
+config_set_compiler|INFO|Jun 03 12:58:38.106|4579|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4579'.
+config_set_compiler|INFO|Jun 03 12:58:38.106|4579|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:39.294|4585|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:39.294|4585|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 973 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:39.295|4585|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:39.295|4585|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:39.295|4585|(eval),,Start Threat Campaigns update
+config_set_compiler|INFO|Jun 03 12:58:40.688|4585|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 03 12:58:40.688|4585|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 03 12:58:40.735|4585|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4585'.
+config_set_compiler|INFO|Jun 03 12:58:40.736|4585|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:40.778|4585|(eval),,Threat Campaigns updated successfully - 911 threat_campaigns loaded (0 updated)
+config_set_compiler|INFO|Jun 03 12:58:40.778|4585|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '4585'.
+config_set_compiler|INFO|Jun 03 12:58:40.778|4585|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 03 12:58:40.787|4585|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4585'.
+config_set_compiler|INFO|Jun 03 12:58:40.787|4585|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1181 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:42.208|4597|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:42.208|4597|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:42.211|4597|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4597'.
+apcompile-full|INFO|Jun 03 12:58:42.211|4597|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:33:55.381|9861|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 990 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:33:55.385|9861|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 990 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:33:55.386|9861|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:33:55.386|9861|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:16.699|9861|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:16.699|9861|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:21.098|9861|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9861'.
+config_set_compiler|INFO|Jun 17 16:34:21.099|9861|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:21.133|9861|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '9861'.
+config_set_compiler|INFO|Jun 17 16:34:21.134|9861|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:21.244|9861|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1198 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9861'.
+config_set_compiler|INFO|Jun 17 16:34:21.244|9861|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1198 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:22.713|9867|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 990 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:22.713|9867|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 990 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:22.730|9867|(eval),,Start Bot Signature update
+config_set_compiler|INFO|Jun 17 16:34:22.731|9867|F5::LockFactory::Base::lock,,F5::BotSignatureFile Line 252 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:22.731|9867|F5::LockFactory::Base::lock,,F5::BotSignatureFile Line 252 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:22.852|9867|F5::BotSignatureFile::load_from_binary,,Loading Bot Signatures: /opt/app_protect/tmp/sigfile.tmp.9867/bot_signatures.bin
+config_set_compiler|INFO|Jun 17 16:34:23.468|9867|F5::LockFactory::Base::unlock,,F5::BotSignatureFile Line 296 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9867'.
+config_set_compiler|INFO|Jun 17 16:34:23.468|9867|F5::LockFactory::Base::unlock,,F5::BotSignatureFile Line 296 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:23.468|9867|F5::BotSignatureFile::load_bot_signatures,,Finish Loading Bot Signatures
+config_set_compiler|INFO|Jun 17 16:34:23.483|9867|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:23.483|9867|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:23.524|9867|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9867'.
+config_set_compiler|INFO|Jun 17 16:34:23.524|9867|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:23.524|9867|(eval),,Bot Signature updated successfully - 2477 bot_signatures loaded, (51 added, 11 updated)
+config_set_compiler|INFO|Jun 17 16:34:23.527|9867|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1198 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9867'.
+config_set_compiler|INFO|Jun 17 16:34:23.527|9867|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1198 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:24.947|9873|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 990 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:24.947|9873|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler Line 990 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:24.947|9873|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 is going to lock '/opt/app_protect/lock/sigfile_update.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:24.947|9873|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 43 has locked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:24.947|9873|(eval),,Start Threat Campaigns update
+config_set_compiler|INFO|Jun 17 16:34:26.607|9873|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:34:26.607|9873|F5::LockFactory::Base::lock,,F5::Sigfile::Update Line 332 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:34:26.671|9873|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9873'.
+config_set_compiler|INFO|Jun 17 16:34:26.672|9873|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 405 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:26.726|9873|(eval),,Threat Campaigns updated successfully - 1002 threat_campaigns loaded (0 updated)
+config_set_compiler|INFO|Jun 17 16:34:26.727|9873|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 is going to unlock '/opt/app_protect/lock/sigfile_update.lock', which is owned by PID '9873'.
+config_set_compiler|INFO|Jun 17 16:34:26.727|9873|F5::LockFactory::Base::unlock,,F5::Sigfile::Update Line 52 has unlocked '/opt/app_protect/lock/sigfile_update.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:34:26.732|9873|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1198 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9873'.
+config_set_compiler|INFO|Jun 17 16:34:26.732|9873|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler Line 1198 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 17 16:34:28.349|9886|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 17 16:34:28.349|9886|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 17 16:34:28.354|9886|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9886'.
+apcompile-full|INFO|Jun 17 16:34:28.354|9886|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+config_set_compiler|INFO|Jun 17 16:37:28.520|10281|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+config_set_compiler|INFO|Jun 17 16:37:28.520|10281|F5::LockFactory::Base::lock,,F5::ASMConfig::Handler::DataProtection Line 95 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+config_set_compiler|INFO|Jun 17 16:37:28.525|10281|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '10281'.
+config_set_compiler|INFO|Jun 17 16:37:28.525|10281|F5::LockFactory::Base::unlock,,F5::ASMConfig::Handler::DataProtection Line 113 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
