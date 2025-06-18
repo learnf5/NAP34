@@ -1,0 +1,103 @@
+apcompile-full|INFO|Jan 04 17:25:59.300|6862|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-01-05T01:25:59.3Z","jobCreateDatetime":"2024-01-05T01:25:59.3Z","jobId":"ce143d3af2f71f3143a6b3baf869294e","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jan 04 17:25:59.300|6862|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jan 04 17:25:59.300|6862|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+apcompile-full|INFO|Jan 04 17:25:59.302|6862|F5::SetActive::Impl::set_active,,Activating policy 2
+apcompile-full|INFO|Jan 04 17:25:59.314|6862|(eval),,Marking active for policy 2
+apcompile-full|INFO|Jan 04 17:25:59.316|6862|F5::Utils::Account::create_account,,Created account 1 for Policy app_protect_default_policy
+apcompile-full|INFO|Jan 04 17:25:59.340|6862|F5::PrepareConf::Policy::prepare,,Start
+apcompile-full|INFO|Jan 04 17:26:02.583|6862|F5::PrepareConf::Policy::prepare,,End
+apcompile-full|INFO|Jan 04 17:26:02.615|6862|F5::SetActive::Impl::invalidate_ramcache_cache,,Invalidate cache for policy app_protect_default_policy
+apcompile-full|INFO|Jan 04 17:26:02.617|6862|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 532 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6862'.
+apcompile-full|INFO|Jan 04 17:26:02.617|6862|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 532 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+apcompile-full|INFO|Jan 04 17:26:02.617|6862|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-01-05T01:26:02.617Z","jobCreateDatetime":"2024-01-05T01:25:59.3Z","jobId":"ce143d3af2f71f3143a6b3baf869294e","jobStatus":"completed","operationId":"set_active"}
+apcompile-full|INFO|Jan 04 17:26:02.621|6862|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-01-05T01:26:02.621Z","jobCreateDatetime":"2024-01-05T01:26:02.621Z","jobId":"11439fae5f33f4b06ede21e42dd62bd7","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jan 04 17:26:02.622|6862|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jan 04 17:26:02.622|6862|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+apcompile-full|INFO|Jan 04 17:26:02.637|6862|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 601 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jan 04 17:26:02.637|6862|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 601 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '3', Self count: '1')
+apcompile-full|INFO|Jan 04 17:26:02.698|6862|F5::PrepareFiles::PrepareCoreFilesUpdate,,Started BD data files prepare
+apcompile-full|INFO|Jan 04 17:26:02.732|6862|F5::PrepareFiles::PrepareInternalConfigFiles,,started, site_id=
+apcompile-full|INFO|Jan 04 17:26:02.735|6862|F5::PrepareFiles::PrepareInternalConfigFiles,,ended, site_id=
+apcompile-full|INFO|Jan 04 17:26:04.269|6862|F5::PrepareFiles::PrepareCoreFilesUpdate,,Completed BD data files prepare
+apcompile-full|INFO|Jan 04 17:26:04.269|6862|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 703 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6862'.
+apcompile-full|INFO|Jan 04 17:26:04.269|6862|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 703 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '0')
+apcompile-full|INFO|Jan 04 17:26:04.269|6862|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 532 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '6862'.
+apcompile-full|INFO|Jan 04 17:26:04.269|6862|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 532 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+apcompile-full|INFO|Jan 04 17:26:04.269|6862|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-01-05T01:26:04.269Z","jobCreateDatetime":"2024-01-05T01:26:02.621Z","jobId":"11439fae5f33f4b06ede21e42dd62bd7","jobStatus":"completed","operationId":"set_active"}
+apcompile-full|INFO|Jun 03 12:58:09.752|4424|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-06-03T19:58:09.752Z","jobCreateDatetime":"2024-06-03T19:58:09.752Z","jobId":"0f09f13ce1e36cafce3785bc0e298995","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jun 03 12:58:09.754|4424|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:09.754|4424|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:09.794|4424|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 601 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:09.794|4424|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 601 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '3', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:10.082|4424|F5::PrepareFiles::PrepareCoreFilesUpdate,,Started BD data files prepare
+apcompile-full|INFO|Jun 03 12:58:10.132|4424|F5::PrepareFiles::PrepareInternalConfigFiles,,started, site_id=
+apcompile-full|INFO|Jun 03 12:58:10.138|4424|F5::PrepareFiles::PrepareInternalConfigFiles,,ended, site_id=
+apcompile-full|INFO|Jun 03 12:58:11.800|4424|F5::PrepareFiles::PrepareCoreFilesUpdate,,Completed BD data files prepare
+apcompile-full|INFO|Jun 03 12:58:11.800|4424|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 703 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4424'.
+apcompile-full|INFO|Jun 03 12:58:11.800|4424|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 703 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:11.800|4424|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 532 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4424'.
+apcompile-full|INFO|Jun 03 12:58:11.800|4424|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 532 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:11.801|4424|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-06-03T19:58:11.8Z","jobCreateDatetime":"2024-06-03T19:58:09.752Z","jobId":"0f09f13ce1e36cafce3785bc0e298995","jobStatus":"completed","operationId":"set_active"}
+apcompile-full|INFO|Jun 03 12:58:42.229|4597|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-06-03T19:58:42.229Z","jobCreateDatetime":"2024-06-03T19:58:42.229Z","jobId":"46a1844098d2c940fd03209ffc4c50d5","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jun 03 12:58:42.229|4597|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:42.229|4597|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:42.231|4597|F5::SetActive::Impl::set_active,,Activating policy 2
+apcompile-full|INFO|Jun 03 12:58:42.244|4597|(eval),,Marking active for policy 2
+apcompile-full|INFO|Jun 03 12:58:42.246|4597|F5::Utils::Account::create_account,,Created account 1 for Policy app_protect_default_policy
+apcompile-full|INFO|Jun 03 12:58:42.272|4597|F5::PrepareConf::Policy::prepare,,Start
+apcompile-full|INFO|Jun 03 12:58:45.578|4597|F5::PrepareConf::Policy::prepare,,End
+apcompile-full|INFO|Jun 03 12:58:45.617|4597|F5::SetActive::Impl::invalidate_ramcache_cache,,Invalidate cache for policy app_protect_default_policy
+apcompile-full|INFO|Jun 03 12:58:45.619|4597|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 542 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4597'.
+apcompile-full|INFO|Jun 03 12:58:45.619|4597|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 542 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:45.620|4597|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-06-03T19:58:45.619Z","jobCreateDatetime":"2024-06-03T19:58:42.229Z","jobId":"46a1844098d2c940fd03209ffc4c50d5","jobStatus":"completed","operationId":"set_active"}
+apcompile-full|INFO|Jun 03 12:58:45.627|4597|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-06-03T19:58:45.627Z","jobCreateDatetime":"2024-06-03T19:58:45.627Z","jobId":"20fc7590fba3b6b7c5f26347d9965997","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jun 03 12:58:45.627|4597|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:45.627|4597|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 149 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:45.647|4597|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 611 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 03 12:58:45.647|4597|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 611 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+apcompile-full|INFO|Jun 03 12:58:45.705|4597|F5::PrepareFiles::PrepareCoreFilesUpdate,,Started BD data files prepare
+apcompile-full|INFO|Jun 03 12:58:45.745|4597|F5::PrepareFiles::PrepareInternalConfigFiles,,started, site_id=
+apcompile-full|INFO|Jun 03 12:58:45.750|4597|F5::PrepareFiles::PrepareInternalConfigFiles,,ended, site_id=
+apcompile-full|INFO|Jun 03 12:58:47.154|4597|F5::PrepareFiles::PrepareCoreFilesUpdate,,Completed BD data files prepare
+apcompile-full|INFO|Jun 03 12:58:47.154|4597|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 713 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4597'.
+apcompile-full|INFO|Jun 03 12:58:47.154|4597|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 713 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:47.154|4597|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 542 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '4597'.
+apcompile-full|INFO|Jun 03 12:58:47.154|4597|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 542 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 03 12:58:47.154|4597|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2024-06-03T19:58:47.154Z","jobCreateDatetime":"2024-06-03T19:58:45.627Z","jobId":"20fc7590fba3b6b7c5f26347d9965997","jobStatus":"completed","operationId":"set_active"}
+apcompile-full|INFO|Jun 17 16:34:28.368|9886|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2025-06-17T23:34:28.368Z","jobCreateDatetime":"2025-06-17T23:34:28.368Z","jobId":"5f15f62323127056c9aabd711fad71ed","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jun 17 16:34:28.369|9886|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 150 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 17 16:34:28.369|9886|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 150 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 17 16:34:28.371|9886|F5::SetActive::Impl::set_active,,Activating policy 1
+apcompile-full|INFO|Jun 17 16:34:28.385|9886|(eval),,Marking active for policy 1
+apcompile-full|INFO|Jun 17 16:34:28.390|9886|F5::Utils::Account::create_account,,Created account 1 for Policy app_protect_default_policy
+apcompile-full|INFO|Jun 17 16:34:28.415|9886|F5::PrepareConf::Policy::prepare,,Start
+apcompile-full|INFO|Jun 17 16:34:30.049|9886|F5::NegativeSignatures::Collection::Compiler::get_compiled_collection,,Beginning signature collection compilation [rss = 362635264]
+apcompile-full|INFO|Jun 17 16:34:30.531|9886|F5::NegativeSignatures::Collection::Compiler::get_compiled_collection,,Building binary signature collection [rss = 423583744]
+apcompile-full|INFO|Jun 17 16:34:31.911|9886|F5::NegativeSignatures::Collection::Compiler::get_compiled_collection,,Completed signature collection compilation [rss = 499240960]
+apcompile-full|INFO|Jun 17 16:34:31.938|9886|F5::NegativeSignatures::Collection::Compiler::get_compiled_collection,,Beginning signature collection compilation [rss = 499240960]
+apcompile-full|INFO|Jun 17 16:34:31.947|9886|F5::NegativeSignatures::Collection::Compiler::get_compiled_collection,,Building binary signature collection [rss = 499240960]
+apcompile-full|INFO|Jun 17 16:34:32.108|9886|F5::NegativeSignatures::Collection::Compiler::get_compiled_collection,,Completed signature collection compilation [rss = 499240960]
+apcompile-full|INFO|Jun 17 16:34:38.318|9886|F5::PrepareConf::Policy::prepare,,End
+apcompile-full|INFO|Jun 17 16:34:38.347|9886|F5::SetActive::Impl::invalidate_ramcache_cache,,Invalidate cache for policy app_protect_default_policy
+apcompile-full|INFO|Jun 17 16:34:38.349|9886|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 550 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9886'.
+apcompile-full|INFO|Jun 17 16:34:38.349|9886|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 550 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 17 16:34:38.349|9886|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2025-06-17T23:34:38.349Z","jobCreateDatetime":"2025-06-17T23:34:28.368Z","jobId":"5f15f62323127056c9aabd711fad71ed","jobStatus":"completed","operationId":"set_active"}
+apcompile-full|INFO|Jun 17 16:34:38.352|9886|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2025-06-17T23:34:38.352Z","jobCreateDatetime":"2025-06-17T23:34:38.352Z","jobId":"167d2284469956310482520a77d9fdbf","jobStatus":"started","operationId":"set_active"}
+apcompile-full|INFO|Jun 17 16:34:38.353|9886|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 150 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 17 16:34:38.353|9886|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 150 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '1')
+apcompile-full|INFO|Jun 17 16:34:38.368|9886|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 619 is going to lock '/opt/app_protect/lock/ts_db.lock'. (flock flags: '2', dont_block: '0').
+apcompile-full|INFO|Jun 17 16:34:38.369|9886|F5::LockFactory::Base::lock,,F5::SetActive::Impl Line 619 has locked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '2', Self count: '1')
+apcompile-full|INFO|Jun 17 16:34:38.431|9886|F5::PrepareFiles::PrepareCoreFilesUpdate,,Started BD data files prepare
+apcompile-full|INFO|Jun 17 16:34:38.435|9886|F5::PrepareFiles::PrepareInternalConfigFiles,,started, site_id=
+apcompile-full|INFO|Jun 17 16:34:38.438|9886|F5::PrepareFiles::PrepareInternalConfigFiles,,ended, site_id=
+apcompile-full|INFO|Jun 17 16:34:39.150|9886|F5::PrepareFiles::prepare_core_files,,Preparing core files for DCC.NEGSIG_SIGNATURE_PROPERTIES completed (0.703 sec)
+apcompile-full|INFO|Jun 17 16:34:40.157|9886|F5::PrepareFiles::prepare_core_files,,Preparing core files for DCC.NEGSIG_SIGNATURES_NAMES completed (0.959 sec)
+apcompile-full|INFO|Jun 17 16:34:40.468|9886|F5::PrepareFiles::prepare_core_files,,Preparing core files for DCC.BOT_SIGNATURES completed (0.232 sec)
+apcompile-full|INFO|Jun 17 16:34:40.477|9886|F5::PrepareFiles::prepare_core_files,,Copying unchanged core files from previous generation
+apcompile-full|INFO|Jun 17 16:34:40.478|9886|F5::PrepareFiles::prepare_core_files,,Preparing core files manifest
+apcompile-full|INFO|Jun 17 16:34:40.483|9886|F5::PrepareFiles::PrepareCoreFilesUpdate,,Completed BD data files prepare
+apcompile-full|INFO|Jun 17 16:34:40.483|9886|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 719 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9886'.
+apcompile-full|INFO|Jun 17 16:34:40.483|9886|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 719 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '1', Self count: '0')
+apcompile-full|INFO|Jun 17 16:34:40.483|9886|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 550 is going to unlock '/opt/app_protect/lock/ts_db.lock', which is owned by PID '9886'.
+apcompile-full|INFO|Jun 17 16:34:40.483|9886|F5::LockFactory::Base::unlock,,F5::SetActive::Impl Line 550 has unlocked '/opt/app_protect/lock/ts_db.lock'. (Lock count: '0', Self count: '0')
+apcompile-full|INFO|Jun 17 16:34:40.483|9886|F5::Log::Job::log_job_status,,{"component":"set_active","datetime":"2025-06-17T23:34:40.483Z","jobCreateDatetime":"2025-06-17T23:34:38.352Z","jobId":"167d2284469956310482520a77d9fdbf","jobStatus":"completed","operationId":"set_active"}
