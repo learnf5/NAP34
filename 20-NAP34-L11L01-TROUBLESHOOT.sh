@@ -12,7 +12,7 @@ curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.
 sudo scp /tmp/nginx.orig                                    nginx:/etc/nginx/
 sudo scp /tmp/nap.orig                                      nginx:/etc/nginx/conf.d/
 
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/POLICY/simplify_requests.json
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/ATTACK/simplify_requests.json
 sudo scp /tmp/simplify_requests.json                        nginx:/etc/app_protect/conf/nap.d/
 
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TUNING/my-default-policy.json
