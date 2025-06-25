@@ -2,10 +2,10 @@
 sudo ssh nginx rm /etc/nginx/conf.d/default.conf
 
 sudo ssh nginx mkdir --parents /etc/app_protect/conf/nap.d
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/DOS/nginx.WAF
-sudo scp /tmp/nginx.WAF                                    nginx:/etc/nginx/nginx.conf
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TROUBLESHOOT/nginx.conf
+sudo scp /tmp/nginx.conf                                    nginx:/etc/nginx/nginx.conf
 
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TROUBLESHOOT/nap.conf
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/LEAKAGE/nap.conf
 sudo scp /tmp/nap.conf                                      nginx:/etc/nginx/conf.d/nap.conf
 
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/HTTP/{nginx,nap}.orig
