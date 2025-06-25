@@ -1,15 +1,12 @@
 # update lab environment
 sudo ssh nginx rm /etc/nginx/conf.d/default.conf
 sudo ssh nginx mkdir --parents /etc/app_protect/conf/nap.d
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/DOS/{nginx,nap}.WAF
-sudo scp /tmp/nginx.WAF                                    nginx:/etc/nginx/nginx.conf
-sudo scp /tmp/nap.WAF                                      nginx:/etc/nginx/conf.d/nap.conf
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TROUBLESHOOT/nginx.conf
+sudo scp /tmp/nginx.conf                                    nginx:/etc/nginx/nginx.conf
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/LEAKAGE/nap.conf
+sudo scp /tmp/nap.conf                                      nginx:/etc/nginx/conf.d/nap.conf
 
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TROUBLESHOOT/{nginx,nap}.DoS
-sudo scp /tmp/nginx.DoS                                    nginx:/etc/nginx/
-sudo scp /tmp/nap.DoS                                      nginx:/etc/nginx/conf.d/
-
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/HTTP/{nginx,nap}.orig
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/LEAKAGE/{nginx,nap}.orig
 sudo scp /tmp/nginx.orig                                    nginx:/etc/nginx/
 sudo scp /tmp/nap.orig                                      nginx:/etc/nginx/conf.d/
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/LEAKAGE/simplify_requests.json
@@ -29,13 +26,12 @@ sudo scp /tmp/app-protect-security-updates.key              nginx:/home/student/
 sudo scp /tmp/nginx.WAF                                     nginx:/etc/nginx/
 sudo scp /tmp/nap.WAF                                       nginx:/etc/nginx/conf.d/
 
-curl --silent --remote-name-all --output-dir /tmp -H "Authorization: token $lic_token" https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TROUBLESHOOT/{nginx,nap}.DoS
-sudo scp /tmp/nginx.DoS                                     nginx:/etc/nginx/
-sudo scp /tmp/nap.DoS                                       nginx:/etc/nginx/conf.d/
+#curl --silent --remote-name-all --output-dir /tmp -H "Authorization: token $lic_token" https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/TROUBLESHOOT/{nginx,nap}.DoS
+#sudo scp /tmp/nginx.DoS                                     nginx:/etc/nginx/
+#sudo scp /tmp/nap.DoS                                       nginx:/etc/nginx/conf.d/
 
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/INTRO/hosts
 sudo scp /tmp/hosts nginx:/etc/hosts
 
-# ADDED for new v4.8 course labs
-### IS THIS MISSING the curl command to get file from github???????
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/FINAL/customStrict.json
 sudo scp /tmp/nap_files/FINAL/customStrict.json                           nginx:/home/student/Desktop/Lab_Files/customStrict.json
