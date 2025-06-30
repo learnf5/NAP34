@@ -33,5 +33,5 @@ sudo scp /tmp/nap.WAF                                       nginx:/etc/nginx/con
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/INTRO/hosts
 sudo scp /tmp/hosts nginx:/etc/hosts
 
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/FINAL/customStrict.json
-sudo scp /tmp/nap_files/FINAL/customStrict.json                           nginx:/home/student/Desktop/Lab_Files/customStrict.json
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/$COURSE_ID/main/FINAL/policy_custom_strict.json
+sudo scp /tmp/nap_files/FINAL/policy_custom_strict.json                           nginx:/home/student/policy_custom_strict.json
